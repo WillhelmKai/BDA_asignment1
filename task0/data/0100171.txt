@@ -1,5 +1,5 @@
 
-﻿<table width="45%" border ="0">
+<table width="45%" border ="0">
 <tr>
 <td bgcolor="#FFE4E1"><font color="#800000" size="5"><p style="text-align:center"><b><a href="http://gutenberg.net.au" target="_blank">Project
 Gutenberg Australia</a><br>
