@@ -19,6 +19,6 @@ for line in sys.stdin:
   # increase counters
   for word in words:
     if "plato" in filename:
-      print('%s\t%s' % (word, 1))
+      # print('%s\t%s' % (word, 1))
     else:
       print('%s\t%s' % (word, 0))
