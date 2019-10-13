@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 import re
+import os
 
 filepath = os.environ.get('mapreduce_map_input_file')
 filename = os.path.split(filepath)[-1]
