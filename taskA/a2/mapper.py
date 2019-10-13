@@ -19,7 +19,7 @@ for line in sys.stdin:
   # increase counters
   for word in words:
     if "plato" in filename:
-      continue
-      # print('%s\t%s' % (word, 1))
+      # continue
+      print('%s\t%s' % (word, 1))
     else:
       print('%s\t%s' % (word, 0))
