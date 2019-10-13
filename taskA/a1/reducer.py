@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from operator import itemgetter
 import sys
-
+from collections import Counter 
 #hold a dictionary
 dic = {}
 for line in sys.stdin:
