@@ -2,18 +2,27 @@
 from operator import itemgetter
 import sys
 from collections import Counter 
-#hold a dictionary
+#hold two dictionaries
 dic = {}
+stopwords = set()
 for line in sys.stdin:
   line = line.strip()
   word, count = line.split('\t', 1)
   #find current word in dic
-  if dic.get(word)  == None:
+  if count == 0:
+    stopwords.add(word)
+  elif dic.get(word)  == None:
     dic[word] = 0
   #not existed add
   else:
     dic[word] += 1
   #existed ++1
+
+#go throught the set, eliminate stopwords in  dic
+for word in stopwords:
+  if dic.get(word) != None:
+    dic.pop(word)
+
 
 most_common = Counter(dic).most_common(200)
 
