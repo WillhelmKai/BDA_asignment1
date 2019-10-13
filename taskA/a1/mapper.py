@@ -1,14 +1,9 @@
 #!/usr/bin/python3
 import sys
-import re
 # input comes from STDIN (standard input)
 for line in sys.stdin:
   # remove leading and trailing whitespace
   line = line.strip()
-  #remove punctuations
-  line = re.sub(r'[^\w\s]','',line)
-  #to lower case
-  line = line.lower()
   # split the line into words
   words = line.split()
   # increase counters
