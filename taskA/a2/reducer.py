@@ -9,7 +9,7 @@ for line in sys.stdin:
   line = line.strip()
   word, count = line.split('\t', 1)
   #find current word in dic
-  if count == 0:
+  if int(count) == 0:
     stopwords.add(word)
   elif dic.get(word)  == None:
     dic[word] = 0
